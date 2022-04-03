@@ -1,11 +1,11 @@
-package quru.qa;
+package tests;
 
 import org.junit.jupiter.api.*;
 
 public class Junit5Tests {
 
     @BeforeAll
-    static void init08() {
+    static void initDB() {
         System.out.println("### @BeforeAll");
     }
 
@@ -22,7 +22,7 @@ public class Junit5Tests {
     }
 
     @AfterAll
-    static void clean08() {
+    static void cleanDB() {
         System.out.println("### @AfterAll");
     }
 
